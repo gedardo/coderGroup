@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+
+  <form name="formulario_personal" method="POST" action="gracias.html">
+    <fieldset>
+      <legend>Datos Personales</legend>
+      <label for="first_name">Nombre: </label>
+      <input type="text" id="first_name" name="first_name" placeholder="José Luis" /><br /><br />
+      <label for="last_name">Apellido: </label>
+      <input type="text" id="first_name" name="last_name" value="Cerezo" placeholder="Gomez Centurion" autofocus required /> <br /><br />
+      <label for="email">Email</label>
+      <input type="email" readonly disabled id="email" name="email" required /><br /><br />
+      <label for="nacimiento">Fecha de Nacimiento</label>
+      <input type="date" name="nacimiento" id="nacimiento" /><br /><br />
+      <label for="experiencia">Experiencia de Vida: </label>
+      <textarea name="experiencia" id="experiencia" rows="10" cols="90"></textarea><br /><br />
+      <label for="sexo">Sexo: </label>
+      <select name="sexo" id="sexo">
+        <option value="M">Masculino</option>
+        <option selected value="F">Femenino</option>
+        <option value="O">Otro</option>
+      </select><br /><br />
+      <label for="cv">Cv: </label>
+      <input type="file" name="cv" id="cv" />
+    </fieldset>
+    <fieldset>
+      <legend>Intereses</legend>
+      <label for="deporte">Deporte Principal: </label><br /><br />
+      <input type="radio" id="futbol" name="deporte" value="Futbol">
+      <label for="futbol">Futbol</label><br />
+      <input type="radio" name="deporte" value="Basquet">
+      <label>Basquet</label><br />
+      <input type="radio" id="voley" name="deporte" value="Voley">
+      <label for="voley">Voley</label><br />
+      <input type="radio" name="deporte" value="Hockey">
+      <label>Hockey</label><br />
+
+      <label for="intereses">Intereses</label><br /><br />
+      <input type="checkbox" name="intereses" id="cultura">
+      <label for="cultura">Cultura</label><br />
+      <input type="checkbox" name="intereses" id="deportes">
+      <label for="deportes">Deportes</label><br />
+      <input type="checkbox" name="intereses" id="turismo">
+      <label for="turismo">Turismo</label><br />
+      <input type="checkbox" name="intereses" id="cocina">
+      <label for="cocina">Cocina</label><br />
+    </fieldset>
+    <br /><br /><br /><br />
+
+
+
+
+    <input type="submit" name="btn_submit" value="Enviar" />
+    <input type="reset" name="btn_reset" value="Limpiar" />
+    <input type="button" name="btn_button" value="Boton" />
+
+  </form>
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <!-- Campo por fuera del form -->
+  <input type="password" name="mi_password">
+  <input type="number" name="edad">
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/estilos.css" />
+  <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+  <title>GROUP - CONTACTO</title>
+</head>
+
+<body>
+
+  <header>
+    <a href="https://www.facebook.com/Group-Administraciones-324704391750638/">
+      <img src="../assets/images/logo.jpg" alt="Logotipo GROUP" />
+    </a>
+    <h1 class="header__titulo">GROUP - ADMINISTRACION DE PROPIEDADES Y CONSORCIOS</h1>
+  </header>
+
+  <h2>Dejanos tus datos y nos contactaremos con vos a la brevedad!</h2>
+
+  <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded" style="display:inline-block;">
+    <article>
+      <fieldset style="margin-left: 260px;">
+        <legend>Datos Personales</legend>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" placeholder="Ingresa tu Nombre" /><br><br>
+        <label for="apellido"> Apellido: </label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido" /><br><br>
+        <label for="apellido"> Telefono: </label>
+        <input type="number" name="telefono" id="telefono" placeholder="" /><br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="nacimiento">Fecha de Nacimiento: </label>
+        <input type="date" name="nacimiento" id="nacimiento" /><br /><br />
+        <label for="sexo">Sexo: </label>
+        <select name="sexo" id="sexo">
+          <option value="M">Masculino</option>
+          <option selected value="F">Femenino</option>
+          <option value="O">Otro</option>
+        </select>
+      </fieldset>
+
+      <fieldset style="margin: 50px;">
+        <label for="interes" style="font-size: 20px;">Interés por contacto: </label><br><br>
+        <input type="radio" name="interes" id="alquiler" value="alquiler" />
+        <label for="alquiler">ALQUILER</label><br>
+        <input type="radio" name="interes" id="compra" value="compra" />
+        <label for="compra">COMPRA</label><br>
+        <input type="radio" name="interes" id="venta" value="venta" />
+        <label for="venta">VENTA</label>
+        <br><br>
+        <label for="comentarios">Comentarios</label><br />
+        <textarea name="comentarios" id="comentarios" rows="5" cols="40"></textarea>
+      </fieldset>
+    </article>
+
+    <div style="margin-left: 45%;">
+      <input type="submit" value="ENVIAR" style="background-color: rgb(78, 228, 78);" />
+      <input type="reset" value="LIMPIAR" />
+      <input type="button" onclick="history.back()" name="volver atrás" value=VOLVER>
+    </div>
+  </form>
+
+  <footer>
+    <span style="font-size: 11px;">Copyright &copy; - Gerardo Navarro &reg;</span>
+    <div style="margin-top: 10px">
+      <span>
+        <i class="fab fa-facebook"></i>
+      </span>
+      <span>
+        <i class="fab fa-twitter"></i>
+      </span>
+      <span>
+        <i class="fab fa-instagram"></i>
+      </span>
+      <span>
+        <i class="fab fa-linkedin"></i>
+      </span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
